@@ -1,6 +1,6 @@
 import mainRoutes from './mainRoutes';
 import aboutmeRoutes from './aboutmeRoutes';
-
+import carrerSkillsRoutes from './carrerSkillsRoutes';
 
 
 const routes = [
@@ -13,6 +13,7 @@ const routes = [
   },
   ...mainRoutes,
   ...aboutmeRoutes,
+  ...carrerSkillsRoutes,
 ]
 
 export default routes

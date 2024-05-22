@@ -5,7 +5,6 @@
 }
 
 .menu-item {
-  // width: 100%;
   height: auto;
   cursor: pointer;
   padding: 40px;
@@ -22,7 +21,7 @@
   -4px -4px 5px 0px #fff9,
   7px 7px 20px 0px #0002,
   4px 4px 5px 0px #0001;
-  .mene-sub-title {
+  .menu-title-ko {
     color: var(--main-color);
   }
 }
@@ -98,7 +97,6 @@
     border: 1px solid #121212;
     font-weight: 500;
     background: transparent;
-    cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
@@ -125,7 +123,7 @@
   font-family: 'Freesentation-9Black';
   margin-bottom: 8px;
 }
-.mene-sub-title {
+.menu-title-ko {
   font-size: 16px;
   font-weight: 900;
   color: #999999;

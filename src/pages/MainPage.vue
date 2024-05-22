@@ -12,23 +12,23 @@
       <q-page>
         <div>
           <ul>
-          <li class="menu-item" @click="moveAboutMe">
+          <li class="menu-item" @click="movePage('자기소개')">
             <p class="mene-title">About Me</p>
-            <p class="mene-sub-title">자기소개</p>
+            <p class="menu-title-ko">자기소개</p>
           </li>
           <div class="d-flex jcsb aic">
-            <li class="menu-item half-item" >
-              <p class="mene-title">Skills</p>
-              <p class="mene-sub-title">스킬</p>
+            <li class="menu-item half-item" @click="movePage('경력/스킬')">
+              <p class="mene-title">Carrer/Skills</p>
+              <p class="menu-title-ko">경력/스킬</p>
             </li>
             <li class="menu-item half-item" >
               <p class="mene-title">Project</p>
-              <p class="mene-sub-title">프로젝트 소개</p>
+              <p class="menu-title-ko">프로젝트 소개</p>
             </li>
           </div>
           <li class="menu-item" >
             <p class="mene-title">Project WebSite</p>
-            <p class="mene-sub-title">프로젝트 'BRIDGE' 웹사이트 바로가기</p>
+            <p class="menu-title-ko">프로젝트 'BRIDGE' 웹사이트 바로가기</p>
           </li>
         </ul>
         </div>
@@ -49,49 +49,20 @@ defineOptions({
 
 const $router = useRouter();
 
-const linksList = [
-  {
-    title: '소개',
-    caption: 'About Me',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  },
-  {
-    title: '디자인',
-    caption: 'BRIDGE Design',
-    icon: 'brush',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: '경험',
-    caption: 'Communication',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: '브릿지 바로가기',
-    caption: 'BRIDGE WebSite',
-    icon: 'touch_app',
-    link: 'https://bridge.kfpa.or.kr/#/'
-  },
-  {
-    title: '연락처',
-    caption: 'Contact Me!',
-    icon: 'smartphone',
-    link: 'https://awesome.quasar.dev'
+const movePage = (name) => {
+  if(name == '자기소개') {
+    $router.push({
+      path: `/about/AboutMe`,
+    });
+  } else if (name == '경력/스킬'){
+    $router.push({
+      path: `/skills/CarrerSkills`,
+    });
+  } else if (name == '프로젝트 소개') {
+
+  } else {
+
   }
-]
-
-const leftDrawerOpen = ref(false)
-
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
-
-const moveAboutMe = () => {
-  $router.push({
-    path: `/about/AboutMe`,
-  });
 }
 
 const moveMain = () => {

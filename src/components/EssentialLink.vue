@@ -51,13 +51,13 @@ const props = defineProps({
 
 const move = (address) => {
   console.log('address', address);
-  if(address == '소개') {
+  if(address == '자기소개') {
     $router.push({
       path: `/about/AboutMe`,
     })
   } else if (address == '경력/스킬') {
     $router.push({
-      path: `/about/AboutMe`,
+      path: `/skills/CarrerSkills`,
     })
   } else if (address == '프로젝트 소개') {
     $router.push({

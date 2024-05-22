@@ -1,0 +1,51 @@
+@media (max-width: 1180px) {
+  .skills-item{
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .skills-item{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 4px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .mene-title {
+    font-size: 20px;
+  }
+  .menu-title-ko {
+    font-size: 13px;
+  }
+  .menu-item {
+    padding: 16px 24px;
+  }
+
+  /* footer */
+  .main-footer {
+    .footer-icon {
+      width: 60px;
+      height: 60px;
+    }
+    .footer-title {
+      font-size: 16px;
+    }
+    .footer-message {
+      font-size: 11px;
+    }
+    .contact-btn {
+      width: 80px;
+      height: auto;
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+}

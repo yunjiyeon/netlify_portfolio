@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf" class="container">
+  <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -39,7 +39,7 @@
     </q-drawer>
 
     <q-page-container>
-      <div class="container">
+      <div>
         <router-view />
       </div>
     </q-page-container>
@@ -83,8 +83,8 @@ const linksList = [
     icon: 'favorite',
   },
   {
-    title: '스킬',
-    caption:'Skills',
+    title: '경력/스킬',
+    caption:'Carrer/Skills',
     icon: 'brush',
   },
   {
