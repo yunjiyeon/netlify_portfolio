@@ -1,0 +1,132 @@
+/* MainLayout CSS */
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-item {
+  // width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 60px rgba(90, 90, 90, 0.08);
+  margin: 10px;
+  transition: all 0.3s ease;
+
+}
+.menu-item:hover {
+  box-shadow:
+  -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
+  .mene-sub-title {
+    color: var(--main-color);
+  }
+}
+.half-item {
+  width: 50%;
+}
+.logo-text {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.main-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.main-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 9vw;
+  font-weight: 900;
+  word-spacing: -10px;
+  color: #ffffff;
+  text-shadow: 4px 4px rgba(38, 37, 37, 0.1);
+  line-height: 10vw;
+}
+
+.main-footer {
+  height: 100px;
+  background-color: #ffffff;
+  .footer-container {
+    padding: 20px;
+    color: #121212;
+  }
+  .footer-title {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1px;
+  }
+  .footer-message {
+    color: var(--main-color);
+    font-weight: 900;
+  }
+  .footer-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    // box-shadow: 3px 3px 10px rgba(90, 90, 90, 0.3);
+
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    border-radius: 50px;
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .contact-btn {
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 1px solid #121212;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+  }
+  .contact-btn:hover {
+    // background-color: #121212;
+    // color: #ffffff;
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+  }
+
+}
+
+
+.mene-title {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: 'Freesentation-9Black';
+  margin-bottom: 8px;
+}
+.mene-sub-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: #999999;
+}

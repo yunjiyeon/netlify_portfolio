@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Freesentation-9Black';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*       color      */
+:root {
+  --main-background: #F8F8F8;
+  --main-black-color: #121212;
+  --main-color: #F08200;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  // font-family: 'Pretendard-Regular';
+  font-size: 14px;
+}
+/*       flex      */
+.d-flex {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.flex-r {
+  display: flex;
+  flex-direction: revert !important;
+}
+.jcsb {
+  justify-content: space-between !important;
+}
+.jcs {
+  justify-content: start;
+}
+.jce {
+  justify-content: flex-end;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcse {
+  justify-content: space-evenly;
+}
+.aic {
+  align-items: center;
+}
+.aife {
+  align-items: flex-end;
+}
+.aifs {
+  align-items: flex-start !important;
+}
+.aib {
+  align-items: baseline;
+}
+.ais {
+  align-items: stretch;
+}
+.flex1 {
+  flex: 1;
+}
+
+/*       크기     */
+.w100 {
+  width: 100% !important;
+}
+.h100 {
+  height: 100% !important;
+}
+
+/*       margin, padding, gap     */
+$x: 1;
+@while $x < 99 {
+  .pl#{$x} {
+    padding-left: 1px * $x !important;
+  }
+  .pr#{$x} {
+    padding-right: 1px * $x !important;
+  }
+  .pt#{$x} {
+    padding-top: 1px * $x !important;
+  }
+  .pb#{$x} {
+    padding-bottom: 1px * $x !important;
+  }
+  .pa#{$x} {
+    padding: 1px * $x !important;
+  }
+  .ml#{$x} {
+    margin-left: 1px * $x !important;
+  }
+  .mr#{$x} {
+    margin-right: 1px * $x !important;
+  }
+  .mt#{$x} {
+    margin-top: 1px * $x !important;
+  }
+  .mb#{$x} {
+    margin-bottom: 1px * $x !important;
+  }
+  .ma#{$x} {
+    margin: 1px * $x !important;
+  }
+  .g#{$x} {
+    gap: 1px * $x !important;
+  }
+  $x: $x + 1;
+}
+
+/*        background       */
+
+.container {
+  width: 100%;
+  background-color: var(--main-background);
+  padding: 10px;
+}
+
+.page-container {
+  padding: 40px 0;
+}
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-family: 'Freesentation-9Black';
+}
+.sub-title {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-family: 'Freesentation-9Black';
+}
+
