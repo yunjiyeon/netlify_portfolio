@@ -235,10 +235,15 @@ p {
 }
 .detail-btn {
   cursor: pointer;
+  height: 40px;
   margin-top: 10px;
   border: 1px solid var(--main-color);
   border-radius: 50px;
   padding: 4px 16px;
   background-color: transparent;
   color: var(--main-color);
+}
+.detail-btn:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
 }

@@ -2,6 +2,7 @@
   <q-layout>
     <q-page-container class="container">
       <q-page>
+
         <div class="title">About Me</div>
       </q-page>
     </q-page-container>

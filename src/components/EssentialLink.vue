@@ -64,7 +64,7 @@ const move = (address) => {
       path: `/about/AboutMe`,
     })
   } else if (address == '브릿지 바로가기') {
-
+    window.open("https://bridge.kfpa.or.kr");
   } else {
 
   }
