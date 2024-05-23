@@ -3,6 +3,23 @@
   justify-content: center;
   align-items: center;
 }
+.about-item-box {
+  margin: 20px 0;
+}
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 2;
+}
+.item-title {
+  min-width: 64px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.item-content {
+  font-size: 18px;
+}
 .keyword-item {
   // cursor: pointer;
   margin-top: 10px;

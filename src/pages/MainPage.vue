@@ -21,7 +21,7 @@
               <p class="mene-title">Carrer/Skills</p>
               <p class="menu-title-ko">경력/스킬</p>
             </li>
-            <li class="menu-item half-item" >
+            <li class="menu-item half-item" @click="movePage('프로젝트소개')">
               <p class="mene-title">Project</p>
               <p class="menu-title-ko">프로젝트 소개</p>
             </li>
@@ -58,8 +58,10 @@ const movePage = (name) => {
     $router.push({
       path: `/skills/CarrerSkills`,
     });
-  } else if (name == '프로젝트 소개') {
-
+  } else if (name == '프로젝트소개') {
+    $router.push({
+      path: `/project/ProjectInfo`,
+    });
   } else {
 
   }

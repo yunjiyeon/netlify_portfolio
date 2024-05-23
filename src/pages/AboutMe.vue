@@ -10,6 +10,24 @@
           </div>
           <div class="about-box">
             <div class="title">About Me</div>
+            <ul class="about-item-box">
+              <li class="about-item">
+                <p class="item-title">이름</p>
+                <p class="item-content">윤지연</p>
+              </li>
+              <li class="about-item">
+                <p class="item-title">생년월일</p>
+                <p class="item-content">1993.01.27 (나이: 31세)</p>
+              </li>
+              <li class="about-item">
+                <p class="item-title">연락처</p>
+                <p class="item-content">010-4214-4265</p>
+              </li>
+              <li class="about-item">
+                <p class="item-title">이메일</p>
+                <p class="item-content">yesyun93@gmail.com</p>
+              </li>
+            </ul>
             <ul class="keyword-box">
               <li class="keyword-item"># 협업</li>
               <li class="keyword-item"># 열정</li>

@@ -1,4 +1,5 @@
 @media (max-width: 1400px) {
+
   .img-layout {
     width: 60%;
     .img-box {
@@ -26,6 +27,7 @@
 }
 @media (max-width: 768px) {
   .about-content-box {
+    height: auto;
     flex-wrap: wrap;
     .img-layout {
       width: 100%;
@@ -95,6 +97,7 @@
     }
   }
   .about-content-box {
+
     .about-box {
       padding: 0 20px;
       margin-top: 50px

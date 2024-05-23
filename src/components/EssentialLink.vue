@@ -61,7 +61,7 @@ const move = (address) => {
     })
   } else if (address == '프로젝트 소개') {
     $router.push({
-      path: `/about/AboutMe`,
+      path: `/project/ProjectInfo`,
     })
   } else if (address == '브릿지 바로가기') {
     window.open("https://bridge.kfpa.or.kr");
