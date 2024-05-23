@@ -32,9 +32,9 @@ HTML,CSS, 자바스크립트 표준을 기반으로, 컴포넌트를 활용하�
               </div>
             </li>
             <li class="skills-item">Quasar<br>
-              <p class="more" @click="moreVisible('Quasar')">more</p>
+              <!-- <p class="more" @click="moreVisible('Quasar')">more</p>
               <p class="more-content" v-if="moreItem == 'Quasar' || openAllMore">객체 지향의 핵심 개념을 숙지하기 위해 노력하고 있으며, 그에 따른 논리적인 코드를 짜고자 합니다.
-  ES6+ 문법을 활용한 웹/앱 사이트 개발 경험이 있습니다.</p>
+  ES6+ 문법을 활용한 웹/앱 사이트 개발 경험이 있습니다.</p> -->
             </li>
             <li class="skills-item">React<br>
               <p class="more" @click="moreVisible('React')">more</p>
