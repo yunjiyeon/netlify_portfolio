@@ -1,0 +1,29 @@
+.project-box {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.project-list {
+  padding: 48px 20px;
+  cursor: pointer;
+}
+.project-list:hover {
+  background-color: var(--main-background);
+}
+.project-title {
+  font-size: 24px;
+  font-weight: 900;
+}
+.project-content {
+  font-size: 18px;
+  padding-top: 10px;
+  white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.total-count {
+  // font-size: 16px;
+  // font-weight: 900;
+  padding: 10px 0;
+}
