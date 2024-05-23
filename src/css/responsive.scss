@@ -1,9 +1,44 @@
+@media (max-width: 1400px) {
+  .img-layout {
+    width: 60%;
+    .img-box {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .text-content {
+    font-size: 16px;
+  }
+
+  .keyword-box {
+    gap: 6px;
+    .keyword-item {
+      margin-top: 0;
+    }
+  }
+
+}
+
 @media (max-width: 1180px) {
   .skills-item{
     width: calc(100% / 2 - 20px);
   }
 }
 @media (max-width: 768px) {
+  .about-content-box {
+    flex-wrap: wrap;
+    .img-layout {
+      width: 100%;
+      .img-box {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .about-box {
+      margin-top: 100px;
+    }
+  }
+
   .top-box {
     padding: 20px;
     margin-top: 40px;
@@ -59,4 +94,17 @@
       font-size: 12px;
     }
   }
+  .about-content-box {
+    .about-box {
+      padding: 0 20px;
+      margin-top: 50px
+    }
+    .img-layout {
+      .img-box {
+        width: 240px;
+        height: 240px;
+      }
+    }
+  }
+
 }

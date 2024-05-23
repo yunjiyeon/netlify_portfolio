@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="container about-container">
-      <div>
+  <q-layout>
+    <q-page-container  class="container ">
+      <q-page>
         <div class="about-content-box">
           <div class="about-box img-layout">
             <div class="img-box">
@@ -37,9 +37,9 @@
             </div> -->
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </q-page>
+    </q-page-container>
+  </q-layout>
 </template>
 
 <script setup>
