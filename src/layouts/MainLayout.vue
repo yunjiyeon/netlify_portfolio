@@ -58,7 +58,7 @@
           </div>
         </div>
         <div>
-          <button class="contact-btn btn btn-primary btn-jelly">Contact</button>
+          <button class="contact-btn btn btn-jelly">Contact</button>
         </div>
       </div>
     </q-footer>
