@@ -2,7 +2,7 @@
   "name": "quasar-project",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "윤지연 포트폴리오",
+  "productName": "윤지연 경력기술서",
   "author": "yunjiyeon <yangdom@naver.com>",
   "private": true,
   "scripts": {

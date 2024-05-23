@@ -53,7 +53,7 @@
             <img src="~src/img/미모티콘1.png">
           </div>
           <div>
-            <p class="footer-title">윤지연 포트폴리오</p>
+            <p class="footer-title">윤지연 경력기술서</p>
             <p class="footer-message">Hope to work Together!</p>
           </div>
         </div>
