@@ -1,11 +1,11 @@
 <template>
   <q-layout>
-    <q-page-container class="page-container">
+    <q-page-container class="page-container" v-if="listVisible">
       <div class="top-box">
         <div class="sub-title mb16">프로젝트 소개</div>
         <div class="title">Project</div>
       </div>
-      <q-page class="container">
+      <div class="container">
         <div class="page-box">
           <article>
             <div class="total-count">총 <strong>1</strong> 개</div>
@@ -55,36 +55,53 @@
                         <span class="tag">Quasar</span>
                       </p>
                     </li>
-
+                    <li class="more-btn-wrap">
+                      <button class="more-btn" @click.stop="moreBtn">more >></button>
+                    </li>
                   </ul>
                 </div>
               </li>
             </ul>
           </article>
         </div>
-      </q-page>
-
-
+      </div>
     </q-page-container>
+    <ProjectDetail v-if="detailVisible" @event="goList"/>
   </q-layout>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import ProjectDetail from './ProjectDetail.vue'
 
 defineOptions({
   name: 'ProjectPage',
 
 });
 
+const listVisible = ref(true);
+const detailVisible = ref(false);
+const moreBtn = (event) => {
+  detailVisible.value = true;
+  listVisible.value = false;
+}
+const goList = () => {
+  detailVisible.value = false;
+  listVisible.value = true;
+}
+
 const openItem = ref(false);
 const openVisible = () => {
   openItem.value = !openItem.value;
 }
 
+
+
 </script>
 <style lang="scss" scoped>
-
+.q-layout {
+  min-height: auto !important;
+}
 .container {
   background-color: #ffffff;
 }
@@ -103,6 +120,7 @@ const openVisible = () => {
   transition: max-height 0.3s ease-in-out;
   .item-title {
     font-size: 14px;
+    font-weight: 600;
   }
   .item-content {
     font-size: 14px;
@@ -136,5 +154,22 @@ ol {
   display: inline-block;
   margin-right: 8px;
   margin-bottom: 4px;
+}
+
+.more-btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  .more-btn {
+    // width: 120px;
+    padding: 6px 20px;
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  :hover {
+    color: var(--main-color);
+  }
 }
 </style>
