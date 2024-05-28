@@ -5,7 +5,7 @@
         <div class="about-content-box">
           <div class="about-box img-layout">
             <div class="img-box">
-              <img src="~src/img/me.jpg">
+              <img src="~src/img/me.png">
             </div>
           </div>
           <div class="about-box">

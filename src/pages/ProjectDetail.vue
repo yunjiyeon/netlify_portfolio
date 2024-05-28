@@ -76,13 +76,18 @@
             transition="scale"
           >
               <div class="main_img">
-                <img src="~src/img/bridge_main.png"/>
+                <img src="~src/img/bridge_main.png" class="screenshot" />
               </div>
-
-
           </q-intersection>
-
-
+          <q-intersection
+            v-for="index in 1"
+            :key="index"
+            transition="scale"
+          >
+            <div class="main_m_img">
+              <img src="~src/img/bridge_main_m.png" class="screenshot"/>
+            </div>
+          </q-intersection>
         </article>
 
       </q-page>
@@ -121,13 +126,15 @@ defineOptions({
 .main_img {
   width: 80%;
   margin: 0 auto;
-  img {
+}
+.main_m_img {
+  width: 320px;
+  margin: 0 auto;
+}
+.screenshot {
     width: 100%;
     border-radius: 10px;
     border: 8px solid #121212;
-    // border: 1px solid #999999;
-    // box-shadow: 4px 4px 60px rgba(90, 90, 90, 0.2);
-  }
 }
 
 .background-img {
@@ -189,8 +196,4 @@ defineOptions({
   }
 }
 
-.dd {
-  // width: 100%;
-  // object-fit: cover;
-}
 </style>
