@@ -1,6 +1,6 @@
 <template>
   <q-layout>
-    <q-page-container class="page-container" v-if="listVisible">
+    <q-page-container class="page-container">
       <div class="top-box">
         <div class="sub-title mb16">프로젝트 소개</div>
         <div class="title">Project</div>
@@ -66,28 +66,27 @@
         </div>
       </div>
     </q-page-container>
-    <ProjectDetail v-if="detailVisible" @event="goList"/>
+    <!-- <ProjectDetail v-if="detailVisible" @event="goList"/> -->
   </q-layout>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import ProjectDetail from './ProjectDetail.vue'
+import { useRouter } from "vue-router";
+// import ProjectDetail from './ProjectDetail.vue'
+
+const $router = useRouter();
 
 defineOptions({
   name: 'ProjectPage',
 
 });
 
-const listVisible = ref(true);
-const detailVisible = ref(false);
+
 const moreBtn = (event) => {
-  detailVisible.value = true;
-  listVisible.value = false;
-}
-const goList = () => {
-  detailVisible.value = false;
-  listVisible.value = true;
+  $router.push({
+    path: `/project/ProjectDetail`,
+  });
 }
 
 const openItem = ref(false);
@@ -172,4 +171,49 @@ ol {
     color: var(--main-color);
   }
 }
+
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    .item-title {
+      padding-bottom: 4px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .project-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .project-content {
+    font-size: 14px;
+  }
+  .page-box {
+    padding: 10px;
+  }
+  .project-list {
+    padding: 20px;
+  }
+  .more-btn-wrap .more-btn {
+    font-size: 14px;
+  }
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    .item-title {
+      font-size: 12px;
+      padding-bottom: 8px;
+    }
+    .item-content {
+      font-size: 12px;
+    }
+    .tag {
+      font-size: 10px;
+    }
+  }
+}
+
 </style>

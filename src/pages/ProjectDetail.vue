@@ -132,15 +132,14 @@
           >
             <div class="contact-btn">
               <div class="btn-wrap">
-                <button class="btn"><i class="fa-solid fa-plus"></i><span class="btn-text">more portfolio</span></button>
+                <button class="btn" @click="morePortfolio"><i class="fa-solid fa-plus"></i><span class="btn-text">more portfolio</span></button>
               </div>
               <div class="btn-wrap">
-                <button class="btn btn_border"><i class="fa-solid fa-arrow-left"></i><span class="btn-text">back</span></button>
+                <button class="btn btn_border" @click="goList"><i class="fa-solid fa-arrow-left"></i><span class="btn-text">list</span></button>
               </div>
             </div>
           </q-intersection>
         </article>
-
       </q-page>
 
 
@@ -150,24 +149,26 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from "vue-router";
+
+const $router = useRouter();
 
 
 defineOptions({
   name: 'ProjectDetail',
-
 });
 
 
-/*-----------------------------------------------------------------------------
-                          props, emit 선언
-  -----------------------------------------------------------------------------*/
-  const emit = defineEmits(["event"]);
 
+const goList = () => {
+  $router.push({
+    path: `/project/ProjectInfo`,
+  });
+}
 
-
-  const goList = () => {
-    emit("event");
-  }
+const morePortfolio = () => {
+  window.open("https://yunjiyeon.github.io/portfolio/")
+}
 
 </script>
 <style lang="scss" scoped>

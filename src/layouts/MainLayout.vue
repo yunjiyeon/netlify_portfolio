@@ -93,12 +93,6 @@ const linksList = [
     icon: 'record_voice_over',
   },
   {
-    title: '브릿지 바로가기',
-    caption: 'BRIDGE WebSite',
-    icon: 'touch_app',
-    link: 'https://bridge.kfpa.or.kr/#/'
-  },
-  {
     title: '연락처',
     caption: 'Contact Me!',
     icon: 'smartphone',

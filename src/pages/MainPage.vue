@@ -26,10 +26,10 @@
               <p class="menu-title-ko">프로젝트 소개</p>
             </li>
           </div>
-          <li class="menu-item" >
+          <!-- <li class="menu-item" >
             <p class="mene-title">Project WebSite</p>
             <p class="menu-title-ko">프로젝트 'BRIDGE' 웹사이트 바로가기</p>
-          </li>
+          </li> -->
         </ul>
         </div>
       </q-page>
