@@ -15,29 +15,24 @@
             right: 0
           }"
         >
-        <div class="detail-title">한국화재보험협회, 일반보험 플랫폼 BRIDGE</div>
+        <div class="detail-title">한국화재보험협회, 일반보험플랫폼 BRIDGE</div>
         <div class="detail-sub-title">web & Mobile Platform</div>
         </div>
       </template>
     </q-parallax>
-
-
     <q-page-container class="page-container">
-      <!-- <div class="top-box">
-        <div class="detail-title">한국화재보험협회, 일반보험 플랫폼 BRIDGE</div>
-        <div class="detail-sub-title">web & Mobile Platform</div>
-        <div>
-          <button @click="goList">목록</button>
-        </div>
-      </div> -->
       <q-page class="container">
-        <article class="detail-article summary">
+        <article class="">
           <q-intersection
             v-for="index in 1"
             :key="index"
             transition="scale"
+            once
           >
-          <div class="summary-container">
+          <div class="main_img">
+                <img src="~src/img/bridge_page_0.svg" class="page-img"/>
+              </div>
+          <!-- <div class="summary-container">
             <div>
             <div class="summary-box">
               <p class="summary-title">Client</p>
@@ -64,33 +59,91 @@
             </div>
           </div>
           <div class="summary-box">
-            화재보험협회가 모아온 데이터를 바탕으로 현장정보, 전문지식 데이터 및 다양한 공공데이터를 결합하여 한국사회 전반에 기여할 수 있는 통합위험관리 플랫폼
+            <p class="summary-text">화재보험협회 데이터 및 다양한 공공데이터를 결합한 통합위험관리 플랫폼 구축</p>
+            <p></p>
           </div>
-          </div>
+          </div> -->
         </q-intersection>
         </article>
-        <article class="detail-article">
+        <article>
           <q-intersection
-            v-for="index in 1"
-            :key="index"
+            v-for="page1 in 1"
+            :key="page1"
             transition="scale"
+            once
           >
               <div class="main_img">
-                <img src="~src/img/bridge_main.png" class="screenshot" />
+                <img src="~src/img/bridge_page_1.png" class="page-img"/>
+              </div>
+          </q-intersection>
+        </article>
+        <article>
+          <q-intersection
+            v-for="page2 in 1"
+            :key="page2"
+            transition="scale"
+            once
+          >
+              <div class="main_img">
+                <img src="~src/img/bridge_page_2.svg" class="page-img"/>
+              </div>
+          </q-intersection>
+        </article>
+        <article>
+          <q-intersection
+            v-for="page3 in 1"
+            :key="page3"
+            transition="scale"
+            once
+          >
+              <div class="main_img">
+                <img src="~src/img/bridge_page_3.png" class="page-img"/>
+              </div>
+          </q-intersection>
+        </article>
+        <article>
+          <q-intersection
+            v-for="page4 in 1"
+            :key="page4"
+            transition="scale"
+            once
+          >
+              <div class="main_img">
+                <img src="~src/img/bridge_page_4.png" class="page-img"/>
               </div>
           </q-intersection>
           <q-intersection
-            v-for="index in 1"
-            :key="index"
+            v-for="page5 in 1"
+            :key="page5"
             transition="scale"
+            once
           >
-            <div class="main_m_img">
-              <img src="~src/img/bridge_main_m.png" class="screenshot"/>
+              <div class="main_img">
+                <img src="~src/img/bridge_page_5.png" class="page-img"/>
+              </div>
+          </q-intersection>
+        </article>
+        <article class="final-article">
+          <q-intersection
+            v-for="page6 in 1"
+            :key="page6"
+            transition="scale"
+            once
+          >
+            <div class="contact-btn">
+              <div class="btn-wrap">
+                <button class="btn"><i class="fa-solid fa-plus"></i><span class="btn-text">more portfolio</span></button>
+              </div>
+              <div class="btn-wrap">
+                <button class="btn btn_border"><i class="fa-solid fa-arrow-left"></i><span class="btn-text">back</span></button>
+              </div>
             </div>
           </q-intersection>
         </article>
 
       </q-page>
+
+
     </q-page-container>
   </q-layout>
 </template>
@@ -122,19 +175,21 @@ defineOptions({
 .container {
   padding: 0;
 }
-
-.main_img {
-  width: 80%;
-  margin: 0 auto;
-}
 .main_m_img {
   width: 320px;
   margin: 0 auto;
 }
-.screenshot {
-    width: 100%;
-    border-radius: 10px;
-    border: 8px solid #121212;
+.page-img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.final-article {
+  background-color: #08487D;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .background-img {
@@ -156,6 +211,7 @@ defineOptions({
   margin-top: 0;
 }
 .detail-title {
+  text-align: center;
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
@@ -165,6 +221,7 @@ defineOptions({
   position: relative;
   z-index: 100;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 .detail-sub-title {
   line-height: 3;
@@ -196,4 +253,80 @@ defineOptions({
   }
 }
 
+.summary-text {
+  font-size: 24px;
+}
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.btn {
+  border: 1px solid #08487D;
+  color: #08487D;
+  font-weight: 900;
+  // background: transparent;
+  width: 100%;
+  min-width: 200px;
+  padding:  16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  .btn-text {
+    padding-left: 8px;
+  }
+}
+.btn_border {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+
+@media (max-width: 1024px) {
+  .q-parallax {
+    height: 300px !important;
+  }
+  .detail-title {
+    font-size: 24px;
+  }
+  .detail-sub-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .final-article {
+    height: 120px;
+  }
+  .contact-btn {
+    gap: 8px;
+  }
+  .btn {
+    min-width: 130px;
+    padding: 8px;
+    .btn-text {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .q-parallax {
+    height: 160px !important;
+  }
+  .detail-title {
+    font-size: 18px;
+  }
+  .detail-sub-title {
+    font-size: 12px;
+  }
+}
 </style>
