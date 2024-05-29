@@ -74,3 +74,47 @@ defineOptions({
 
 
 </script>
+<style>
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .item-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .item-content {
+    font-size: 16px;
+  }
+  .keyword-item {
+    font-size: 12px;
+  }
+  .about-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 468px) {
+  .title {
+    font-size: 24px;
+  }
+  .item-title {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .item-content {
+    font-size: 13px;
+  }
+  .keyword-item {
+    font-size: 10px;
+  }
+  .about-title {
+    font-size: 16px;
+  }
+  .text-content {
+    font-size: 12px;
+  }
+}
+
+</style>
