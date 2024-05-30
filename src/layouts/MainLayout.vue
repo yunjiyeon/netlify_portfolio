@@ -48,7 +48,7 @@
     <q-footer class="main-footer">
       <div class="footer-container d-flex jcsb aic">
 
-        <div class="d-flex g20 aic">
+        <div class="d-flex g20 aic" @click="goIndex">
           <div class="footer-icon">
             <img src="~src/img/미모티콘1.png">
           </div>
@@ -99,6 +99,11 @@ const linksList = [
   }
 ]
 
+const goIndex = () => {
+  $router.push({
+    path: `/`,
+  });
+}
 const goContact = () => {
   $router.push({
     path: `/contact/ContactMe`,
