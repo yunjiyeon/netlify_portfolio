@@ -265,6 +265,7 @@ const morePortfolio = () => {
   flex-wrap: wrap;
 }
 .btn {
+  background-color: #ffffff;
   border: 1px solid #08487D;
   color: #08487D;
   font-weight: 900;
