@@ -160,6 +160,7 @@ ol {
   justify-content: flex-end;
   .more-btn {
     // width: 120px;
+    color: #121212;
     padding: 6px 20px;
     background: transparent;
     border: none;
@@ -167,7 +168,7 @@ ol {
     font-size: 16px;
     cursor: pointer;
   }
-  :hover {
+  .more-btn:hover {
     color: var(--main-color);
   }
 }
