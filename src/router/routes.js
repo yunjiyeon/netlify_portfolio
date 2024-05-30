@@ -2,6 +2,7 @@ import mainRoutes from './mainRoutes';
 import aboutmeRoutes from './aboutmeRoutes';
 import carrerSkillsRoutes from './carrerSkillsRoutes';
 import projectRoutes from './projectRoutes';
+import contactRoutes from './contactRoutes';
 
 const routes = [
 
@@ -15,6 +16,7 @@ const routes = [
   ...aboutmeRoutes,
   ...carrerSkillsRoutes,
   ...projectRoutes,
+  ...contactRoutes,
 ]
 
 export default routes

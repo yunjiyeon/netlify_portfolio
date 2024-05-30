@@ -58,7 +58,7 @@
           </div>
         </div>
         <div>
-          <button class="contact-btn btn btn-jelly">Contact</button>
+          <button class="contact-btn btn btn-jelly" @click="goContact">Contact</button>
         </div>
       </div>
     </q-footer>
@@ -99,6 +99,11 @@ const linksList = [
   }
 ]
 
+const goContact = () => {
+  $router.push({
+    path: `/contact/ContactMe`,
+  });
+}
 const leftDrawerOpen = ref(false)
 
 function toggleLeftDrawer () {

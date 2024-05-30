@@ -64,7 +64,9 @@ const move = (address) => {
       path: `/project/ProjectInfo`,
     })
   } else {
-
+    $router.push({
+      path: `/contact/ContactMe`,
+    })
   }
 }
 </script>

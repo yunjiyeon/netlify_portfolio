@@ -12,6 +12,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'YESMyoungjo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /*       color      */
@@ -27,6 +35,10 @@
   font-family: "Noto Sans KR", sans-serif;
   // font-family: 'Pretendard-Regular';
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
 }
 /*       flex      */
 .d-flex {
